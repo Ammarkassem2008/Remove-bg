@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="website icon" type="png" href="images/1.png">
+    <title>RemoveBG</title>
+    <link rel="stylesheet" href="style.css" /> 
+
+
+  </head>
+  <body>
+    <div class="container">
+     
+      <div class="images">
+        <img src="images/1.svg">
+        <h3>Remove image background with Ammar Kassem<span> automatically </span> & <span>free</span></h3>
+      </div>
+      
+      
+      
+      
+      <!-- Add Card -->
+      <div class="card" id="addCard">
+        <button>
+          <input type="file" name="" id="fileInput" />
+          Upload Image
+        </button>
+        <p>Choose an image to makes it transparent</p>
+      </div>
+      <!-- Display Card -->
+      <div class="card" id="displayCard">
+        <div class="image-cont">
+          <img
+            id="display-img"
+            src=""
+           
+          />
+        </div>
+        <button id="startBtn">Start</button>
+      </div>
+      <!-- Loading Card -->
+      <div class="card" id="loadingCard">
+        <div class="loader"></div>
+      </div>
+      <!-- Download Card -->
+      <div class="card" id="downloadCard">
+        <div class="image-cont">
+          <img
+            class="image-before"
+            src=""
+            loading="lazy"
+          />
+          <img
+            class="image-after"
+            src=""
+            loading="lazy"
+          />
+        </div>
+        <div style="display: flex; gap: 10px">
+          <button id="uploadAnother">Upload Another</button>
+          <button style="padding: 10px 40px">
+            <a id="downloadHref" download="ammar-remove-bg"> Download </a>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
